@@ -3,7 +3,6 @@ import datetime
 
 months = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' : 'May', '6' : 'June',
  '7' : 'July', '8' : 'August', '9' : 'September', '10' : 'October', '11' : 'November', '12' : 'December'}
-# months_inday = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12]
 daysweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 dict_daysweek = {'Sunday' : '7', 'Monday' : '1', 'Tuesday' : '2', 'Wednesday' : '3', 'Thursday' : '4', 'Friday' : '5', 'Saturday' : '6'}
 daysweek_2009 = ['Thursday', 'Friday', 'Saturday']
@@ -119,7 +118,7 @@ for x in range(len(date_key_certo)):
 
 
 
-with open('dw_test.csv', 'w', newline='') as file:
+with open('dw_dates_2009-2029.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["date_key", "dateinfull", "dayofweek", "month", "year", "quarter", "daynuminweek", "daynuminmonth", "daynuminyear", "monthnuminyear", "weeknuminyear", "holidays_key"])
     for x in range(len(date_key)):
