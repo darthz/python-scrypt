@@ -28,7 +28,7 @@ for x in range (0, numdays):
 date_key_certo = date_key[::-1]
 
 #---------------------------------------------------
-#DATA POR EXTENSO
+#DATA POR EXTENSO - Exemplo : "January 01, 2009"
 #---------------------------------------------------
 dateinfull = []
 
@@ -42,7 +42,7 @@ for x in range(len(date_key_certo)):
 
 
 #---------------------------------------------------
-#DIA POR EXTENSO
+#DIA DA SEMANA POR EXTENSO - Exemplo : Thursday
 #---------------------------------------------------
 dias_absurdo = daysweek_2009 + daysweek * 1100
 
@@ -51,7 +51,7 @@ for x in range(len(date_key_certo)):
 	dayofweek.append(dias_absurdo[x])
 
 #---------------------------------------------------
-#MES POR EXTENSO
+#MES POR EXTENSO - Exemplo : January
 #--------------------------------------------------
 -mes_extenso = []
 
@@ -61,7 +61,7 @@ for x in range(len(date_key_certo)):
 	palavra = months[str(int(mes))]
 	mes_extenso.append(palavra)
 #---------------------------------------------------
-#ANO
+#ANO - Exemplo : 2009
 #---------------------------------------------------
 ano = []
 
@@ -71,7 +71,7 @@ for x in range(len(date_key_certo)):
 
 #---------------------------------------------------
 #---------------------------------------------------
-#QUARTER DO ANO (NUMERO)
+#QUARTER DO ANO (NUMERO) - Exemplo : 1
 quarter = []
 
 for x in range(len(date_key_certo)):
@@ -80,7 +80,7 @@ for x in range(len(date_key_certo)):
 
 
 #---------------------------------------------------
-#DIA DA SEMANA (NUMERO)
+#DIA DA SEMANA (NUMERO) - Exemplo : 4
 #---------------------------------------------------
 dia_semana_num = []
 
@@ -88,7 +88,7 @@ for x in range(len(date_key_certo)):
 	dia_semana_num.append(dict_daysweek[str(dias_absurdo[x])])
 
 #---------------------------------------------------
-#DIA DO MES (NUMERO)
+#DIA DO MES (NUMERO) - Exemplo : 20
 #---------------------------------------------------
 dia_mes = []
 
@@ -97,7 +97,7 @@ for x in range(len(date_key_certo)):
 	dia_mes.append(str(int(dia)))
 
 #---------------------------------------------------
-#DIA DO ANO (NUMERO)
+#DIA DO ANO (NUMERO) - Exemplo : 189
 #---------------------------------------------------
 dia_do_ano = []
 
@@ -108,7 +108,7 @@ for x in range(len(date_key_certo)):
     dia_do_ano.append(totald.days + 1)
 
 #---------------------------------------------------
-#MES DO ANO (NUMERO)
+#MES DO ANO (NUMERO) - Exemplo : 11
 #---------------------------------------------------
 mes_ano = []
 
@@ -117,7 +117,7 @@ for x in range(len(date_key_certo)):
 	mes_ano.append(int(mes))
 
 #---------------------------------------------------
-#SEMANA DO ANO (NUMERO)
+#SEMANA DO ANO (NUMERO) - Exemplo : 32
 #---------------------------------------------------
 semana_ano = []
 
