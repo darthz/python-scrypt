@@ -16,11 +16,17 @@ daysweek_2009 = ['Thursday', 'Friday', 'Saturday']
 #DATA DE 2009 ATE 2030
 #---------------------------------------------------
 a = datetime.date(2029,12,31)
+
+#TOTAL DE DIAS
 numdays = 7670
+
 date_key = []
 for x in range (0, numdays):
     date_key.append(a - datetime.timedelta(days = x))
+
+#INVERTENDO PRA VISUALIZAR MELHOR
 date_key_certo = date_key[::-1]
+
 #---------------------------------------------------
 #DATA POR EXTENSO
 #---------------------------------------------------
