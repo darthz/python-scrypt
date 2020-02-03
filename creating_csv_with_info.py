@@ -1,9 +1,5 @@
 import csv
-import time
 import datetime
-
-
-#dia 1 do 1 de 2009 = quinta feira = thursday
 
 months = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' : 'May', '6' : 'June',
  '7' : 'July', '8' : 'August', '9' : 'September', '10' : 'October', '11' : 'November', '12' : 'December'}
@@ -11,16 +7,7 @@ months = {'1' : 'January', '2' : 'February', '3' : 'March', '4' : 'April', '5' :
 daysweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 dict_daysweek = {'Sunday' : '7', 'Monday' : '1', 'Tuesday' : '2', 'Wednesday' : '3', 'Thursday' : '4', 'Friday' : '5', 'Saturday' : '6'}
 daysweek_2009 = ['Thursday', 'Friday', 'Saturday']
-# qnt_dias_mes_normal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-# qnt_dias_mes_bis = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-# days_31 = [x for x in range(1,32)]
-# days_30 = [x for x in range(1,31)]
-# days_29 = [x for x in range(1,30)]
-# days_28 = [x for x in range(1,29)]
-# years = [x for x in range(2009,2031)]
-# bisexto = [x for x in range(2012,2031, 4)]
 
-# colunas = "date_key", "dateinfull", "dayofweek", "month", "year", "quarter", "daynuminweek", "daynuminmonth", "daynuminyear", "monthnuminyear", "weeknuminyear", "holidays_key"
 
 #DATA DE 2009 ATE 2030
 #---------------------------------------------------
@@ -36,9 +23,6 @@ date_key_certo = date_key[::-1]
 dateinfull = []
 
 for x in range(len(date_key_certo)):
-    # ano = str(date_key_certo[x]).split('-')[0]
-    # mes = str(date_key_certo[x]).split('-')[1]
-    # dia = str(date_key_certo[x]).split('-')[2]
 
     ano = str(date_key_certo[x].year)
     mes = str(date_key_certo[x].month)
